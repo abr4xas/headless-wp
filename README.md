@@ -34,7 +34,7 @@ Headless Mode completely blocks access to the WordPress frontend for all users (
 
 ## Installation
 
-1. Upload the plugin files to the `/wp-content/plugins/headless-mode` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/headless-wp` directory, or install the plugin through the WordPress plugins screen directly.
 
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
@@ -228,11 +228,11 @@ The plugin follows WordPress best practices with:
 
 ## Credits
 
-Original plugin by [Josh Pollock, Jason Bahl, and Ben Meredith](https://github.com/Shelob9/headless-mode).
+Original plugin by [Josh Pollock, Jason Bahl, and Ben Meredith](https://github.com/Shelob9/headless-wp).
 
 ## Support
 
-For support, feature requests, or contributions, please visit the [GitHub repository](https://github.com/Shelob9/headless-mode).
+For support, feature requests, or contributions, please visit the [GitHub repository](https://github.com/Shelob9/headless-wp).
 
 ## License
 
