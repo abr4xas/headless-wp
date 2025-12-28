@@ -1,3 +1,5 @@
+![Headless Mode Banner](art/banner-1544x500.png)
+
 # Headless Mode
 
 > Once you take the head off of WordPress, nobody needs to see it. This plugin hides the front end by redirecting to the shiny static (etc) site.
@@ -10,27 +12,27 @@ Headless Mode completely blocks access to the WordPress frontend for all users (
 
 ## Features
 
-- 🚫 **Blocks all frontend access** - No one can access the WordPress frontend, including administrators
-- 🔄 **Automatic redirects** - All frontend requests are redirected to your headless client URL
-- 🔌 **API access preserved** - REST API and GraphQL endpoints remain fully accessible
-- ⚙️ **Admin panel access** - WordPress admin (wp-admin) remains accessible for content management
-- ⏰ **CRON support** - WordPress scheduled tasks continue to work normally
-- 💻 **Developer-friendly** - Default URL set to `http://localhost:3000` for local development
-- 🚀 **Production-ready** - Easy configuration via wp-config.php constant
+-   🚫 **Blocks all frontend access** - No one can access the WordPress frontend, including administrators
+-   🔄 **Automatic redirects** - All frontend requests are redirected to your headless client URL
+-   🔌 **API access preserved** - REST API and GraphQL endpoints remain fully accessible
+-   ⚙️ **Admin panel access** - WordPress admin (wp-admin) remains accessible for content management
+-   ⏰ **CRON support** - WordPress scheduled tasks continue to work normally
+-   💻 **Developer-friendly** - Default URL set to `http://localhost:3000` for local development
+-   🚀 **Production-ready** - Easy configuration via wp-config.php constant
 
 ## What Gets Blocked
 
-- All frontend pages and posts
-- All frontend archives and taxonomies
-- All frontend custom post types
+-   All frontend pages and posts
+-   All frontend archives and taxonomies
+-   All frontend custom post types
 
 ## What Remains Accessible
 
-- WordPress REST API (`/wp-json/`)
-- WP GraphQL endpoints
-- WordPress admin panel (`/wp-admin/`)
-- WordPress CRON jobs
-- All backend functionality
+-   WordPress REST API (`/wp-json/`)
+-   WP GraphQL endpoints
+-   WordPress admin panel (`/wp-admin/`)
+-   WordPress CRON jobs
+-   All backend functionality
 
 ## Installation
 
@@ -146,85 +148,85 @@ add_filter( 'headless_mode_will_redirect', function( $will_redirect, $url ) {
 
 ### Available Constants
 
-- `HEADLESS_MODE_CLIENT_URL` - The URL to redirect frontend traffic to (default: `http://localhost:3000`)
-- `HEADLESS_MODE_DEFAULT_URL` - Internal constant for default URL value
+-   `HEADLESS_MODE_CLIENT_URL` - The URL to redirect frontend traffic to (default: `http://localhost:3000`)
+-   `HEADLESS_MODE_DEFAULT_URL` - Internal constant for default URL value
 
 ### Architecture
 
 The plugin follows WordPress best practices with:
 
-- **Object-Oriented Programming (OOP)** - Clean, maintainable code structure
-- **Separation of concerns** - `/includes/` for core logic, `/admin/` for admin functionality
-- **Strict type declarations** - `declare(strict_types=1)` for type safety
-- **Proper security** - Sanitization, validation, and escaping throughout
-- **Complete PHPDoc documentation** - Well-documented codebase
+-   **Object-Oriented Programming (OOP)** - Clean, maintainable code structure
+-   **Separation of concerns** - `/includes/` for core logic, `/admin/` for admin functionality
+-   **Strict type declarations** - `declare(strict_types=1)` for type safety
+-   **Proper security** - Sanitization, validation, and escaping throughout
+-   **Complete PHPDoc documentation** - Well-documented codebase
 
 ## Changelog
 
 ### 1.0.0
 
-- Complete code refactoring following WordPress best practices
-- Converted to Object-Oriented Programming (OOP) architecture
-- Added strict type declarations (`declare(strict_types=1)`)
-- Separated concerns into modular classes (`/includes/` and `/admin/` directories)
-- Improved security with proper URL validation and sanitization
-- Enhanced escape functions for all output (using `esc_html_e()` instead of `_e()`)
-- Changed default behavior to block ALL users from frontend (including administrators)
-- Updated default URL to `http://localhost:3000` for local development
-- Added proper text domain loading
-- Added activation and deactivation hooks
-- Improved code documentation with complete PHPDoc
-- Better error handling and URL validation
-- Performance optimizations with early returns
-- Maintained backward compatibility with existing filters
+-   Complete code refactoring following WordPress best practices
+-   Converted to Object-Oriented Programming (OOP) architecture
+-   Added strict type declarations (`declare(strict_types=1)`)
+-   Separated concerns into modular classes (`/includes/` and `/admin/` directories)
+-   Improved security with proper URL validation and sanitization
+-   Enhanced escape functions for all output (using `esc_html_e()` instead of `_e()`)
+-   Changed default behavior to block ALL users from frontend (including administrators)
+-   Updated default URL to `http://localhost:3000` for local development
+-   Added proper text domain loading
+-   Added activation and deactivation hooks
+-   Improved code documentation with complete PHPDoc
+-   Better error handling and URL validation
+-   Performance optimizations with early returns
+-   Maintained backward compatibility with existing filters
 
 ### 0.4.0
 
-- Checked for compatibility with the latest WP version
-- Read several hot takes from Josh on Twitter. Inaccurately attributed them to Elon Musk.
-- 33 points and several attaboys to Alex Standiford for testing this and submitting a PR. You're the wind beneath several wings.
-- I checked again, and nobody has donated money toward the maintenance of this plugin. I'm not mad, I'm just disappointed. https://benlikes.us/donate
+-   Checked for compatibility with the latest WP version
+-   Read several hot takes from Josh on Twitter. Inaccurately attributed them to Elon Musk.
+-   33 points and several attaboys to Alex Standiford for testing this and submitting a PR. You're the wind beneath several wings.
+-   I checked again, and nobody has donated money toward the maintenance of this plugin. I'm not mad, I'm just disappointed. https://benlikes.us/donate
 
 ### 0.3.0
 
-- Adds a filter named `headless_mode_will_redirect` so that individual requests can make it through to WP if needed.
-- Fixed an issue with new installs showing a white screen for users not logged in, until a constant is set.
-- 27 additional non-refundable points for Josh starting a new job since the last release.
-- 37 points for Jason also starting a new job. Jason's additional points are for lack of hair, and totally arbitrary.
-- I feel like more of you should be donating. Just saying. https://benlikes.us/donate
+-   Adds a filter named `headless_mode_will_redirect` so that individual requests can make it through to WP if needed.
+-   Fixed an issue with new installs showing a white screen for users not logged in, until a constant is set.
+-   27 additional non-refundable points for Josh starting a new job since the last release.
+-   37 points for Jason also starting a new job. Jason's additional points are for lack of hair, and totally arbitrary.
+-   I feel like more of you should be donating. Just saying. https://benlikes.us/donate
 
 ### 0.2.0
 
-- Adds a filter for `headless_mode_disable_front_end` so that access to the front end can be granted on a per-user basis.
-- Tested up to WordPress 5.5
-- 17 total new points for a relatively long time with no support issues.
-- The plugin still works like a CHARM, and none of you people have donated.
+-   Adds a filter for `headless_mode_disable_front_end` so that access to the front end can be granted on a per-user basis.
+-   Tested up to WordPress 5.5
+-   17 total new points for a relatively long time with no support issues.
+-   The plugin still works like a CHARM, and none of you people have donated.
 
 ### 0.1.0
 
-- Resolve PHP notice due to missing parentheses.
-- Tally of 14 total points based on previous issues.
-- Shameless pointing out that the points are all made up.
+-   Resolve PHP notice due to missing parentheses.
+-   Tally of 14 total points based on previous issues.
+-   Shameless pointing out that the points are all made up.
 
 ### 0.0.4
 
-- More changes to the readme for display on wordpress.org
-- 73% more #HiRoy. Have you said Hi to Roy today? https://hiroy.club
-- Change the author URL to not be so self-serving, Ben.
-- A much needed Points review by Meagan Hanes based on the above changes is pending.
+-   More changes to the readme for display on wordpress.org
+-   73% more #HiRoy. Have you said Hi to Roy today? https://hiroy.club
+-   Change the author URL to not be so self-serving, Ben.
+-   A much needed Points review by Meagan Hanes based on the above changes is pending.
 
 ### 0.0.3
 
-- Modifications for the .org readme authors, etc.
+-   Modifications for the .org readme authors, etc.
 
 ### 0.0.2
 
-- Enhancements to get it ready for the .org repo
+-   Enhancements to get it ready for the .org repo
 
 ## Requirements
 
-- WordPress 5.0 or higher
-- PHP 7.4 or higher
+-   WordPress 5.0 or higher
+-   PHP 7.4 or higher
 
 ## Credits
 
