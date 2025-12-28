@@ -228,11 +228,11 @@ The plugin follows WordPress best practices with:
 
 ## Credits
 
-Original plugin by [Josh Pollock, Jason Bahl, and Ben Meredith](https://github.com/Shelob9/headless-wp).
+Original plugin by [Josh Pollock, Jason Bahl, and Ben Meredith](https://github.com/Shelob9/headless-mode).
 
 ## Support
 
-For support, feature requests, or contributions, please visit the [GitHub repository](https://github.com/Shelob9/headless-wp).
+For support, feature requests, or contributions, please visit the [GitHub repository](https://github.com/abr4xas/headless-wp).
 
 ## License
 
